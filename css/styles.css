@@ -1,0 +1,243 @@
+/* колір основного фону #ffffff */
+/* другорядний колір фону #2F303A */
+/* додатковий колір фону #F5F4FA */
+/* основний колір тексту #757575 */
+/* другорядний колір тексту, заголовків #212121 */
+/* додатковий колір тексту #ffffff */
+/* основний колір акценту #2196F3 */
+/* другорядний колір акценту #000000 */
+/* додатковий колір фону карточок #EEEEEE */
+/* колір футера rgba(255, 255, 255, 0.6) */
+
+:root {
+    --primary-bgc-color: #ffffff;
+    --secondary-bgc-color: #2F303A;
+    --add-bgc-color: #F5F4FA;
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --add-text-color: #ffffff;
+    --primary-accent-color: #2196F3;
+    --secondary-accent-color: #000000;
+    --card-accent-color: #EEEEEE;
+    --footer-color: rgba(255, 255, 255, 0.6)
+}
+
+body {
+    background-color: var(--primary-bgc-color);
+    color: var(--primary-text-color);
+
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+}
+.logo {
+    color: var(--secondary-accent-color);
+
+    font-family: raleway, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-decoration: none;
+}
+.logo-web {
+    color: var(--primary-accent-color);
+}
+
+/* Site nav. Шапка сайту */
+
+.site-nav .link {
+    color: var(--title-text-color);
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.site-nav.list {
+    list-style: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--primary-accent-color);
+}
+.site-nav .link.current {
+    color: var(--primary-accent-color);
+}
+
+.contact .link {
+    color: var(--primary-text-color);
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.contact.list {
+    list-style: none;
+}
+.contact .link:hover,
+.contact .link:focus,
+.contact .number:hover {
+    color: var(--primary-accent-color);
+}
+
+/* Hero */
+
+.hero {
+    background-color: var(--secondary-bgc-color);
+}
+.hero-title {
+    color: var(--add-text-color);
+
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+}
+.hero-button {
+    color: var(--add-text-color);
+    background-color: var(--primary-accent-color);
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+/* Особливості */
+
+.section .title {
+    color: var(--title-text-color);
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: left;
+}
+.section .paragraph {
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+}
+.section-list {
+    list-style: none;
+}
+
+/* Чим ми займаємося */
+
+.features .features-title {
+    color: var(--title-text-color);
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+}
+.features-list {
+    list-style: none;
+}
+
+/* Наша команда */
+
+.team {
+    background-color: var(--add-bgc-color);
+}
+.team .team-title {
+    color: var(--title-text-color);
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+}
+.team .title {
+    color: var(--title-text-color);
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.17;
+    text-align: center;
+}
+.team .paragraph {
+    font-size: 16px;
+    line-height: 1.17;
+    text-align: center;
+}
+.team-list {
+    list-style: none;
+}
+
+/* Футер */
+
+footer {
+    color: var(--footer-color);
+    background-color: var(--secondary-bgc-color);
+
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+}
+footer .address {
+    font-style: normal;
+}
+footer .city {
+    color: var(--add-text-color);
+}
+footer .logo {
+    color: var(--add-text-color);
+}
+footer .link {
+    color: var(--footer-color);
+    text-decoration: none;
+}
+
+/* Сторінка Портфоліо */
+/* Фільтри */
+
+.project .button {
+    color: var(--title-text-color);
+    background-color: var(--add-bgc-color);
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.63;
+}
+.project .button:hover,
+.project .button:focus {
+    color: var(--add-text-color);
+    background-color: var(--primary-accent-color);
+}
+.button-list {
+    list-style: none;
+}
+
+/* Приклади робіт */
+
+.project a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.project .title {
+    color: var(--title-text-color);
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-align: left;
+}
+.project .paragraph {
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: left;
+}
+.project-list {
+    list-style: none;
+}
