@@ -238,6 +238,11 @@ footer .link {
     line-height: 1.88;
     text-align: left;
 }
+.project .description {
+    color: var(--add-text-color);
+    line-height: 1.56;
+    font-size: 18px;
+}
 .project-list {
     list-style: none;
 }
